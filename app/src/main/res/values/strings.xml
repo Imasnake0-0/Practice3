@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FitnessClubs(alpha v0.9)</string>
+    <string name="vibor">Выберите фитнес клуб</string>
+    <string-array name="FitnessClubs">
+        <item>Spirit Fitness</item>
+        <item>Encore Fitness</item>
+        <item>World Class</item>
+        <item>Ohana Fitness</item>
+        <item>Территория Фитнеса</item>
+        <item>XFit</item>
+    </string-array>
+</resources>
