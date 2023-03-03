@@ -30,9 +30,6 @@ public class MainActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         String item = (String)spinner.getAccessibilityClassName();
-        ActivityResultLauncher<I> registerForActivityResult (
-                ActivityResultContract<I, O> contract,
-                ActivityResultCallback<O> callback)
         buttonRas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
