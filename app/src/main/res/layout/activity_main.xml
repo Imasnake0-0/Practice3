@@ -6,67 +6,62 @@
     android:layout_height="match_parent"
     android:background="#FFB447"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/vibor"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="352dp"
+        android:layout_height="457dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/raspisanie"
+        android:layout_width="173dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#FFC107"
+        android:text="Расписание"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="602dp"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/zapic"
         android:layout_width="173dp"
         android:layout_height="70dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
         android:backgroundTint="#FFC107"
         android:onClick="onClickZ"
         android:text="Запись"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/raspisanie"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="602dp"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/raspisanie"
-        android:layout_width="173dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#FFC107"
-        android:text="Расписание"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/zapic" />
-    <LinearLayout
-        android:id="@+id/background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:visibility="visible">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="73dp"
-            android:text="@string/vibor"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:gravity="center"/>
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_back" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
